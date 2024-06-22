@@ -1,1 +1,2 @@
 # calculator
+The Final project under the Odin Project's Foundations course, to test my understanding of everything I've learnt throughout it, which includes HTML, CSS(majorly flexbox) and Javascript. Everything required for any basic web application. The task is to build a simple Calculator.

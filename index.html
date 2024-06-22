@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Calculator</title>
 </head>
 <body>
-    
+    <div class="flex" id="Calculator">
+        <div class="flex column">
+            <div class="flex" id="display-container">
+                <div id="display">0000</div>
+            </div>
+            <div id="keys" class="flex">
+                <div>
+                    <div class="flex">
+                        <div id = 'seven' class="key">7</div>
+                        <div id = 'eight' class="key">8</div>
+                        <div id = 'nine' class="key">9</div>
+                    </div>
+                    <div class="flex">
+                        <div id = 'four' class="key">4</div>
+                        <div id = 'five' class="key">5</div>
+                        <div id = 'six' class="key">6</div>
+                    </div>
+                    <div class="flex">
+                        <div id = 'one' class="key">1</div>
+                        <div id = 'two' class="key">2</div>
+                        <div id = 'three' class="key">3</div>
+                    </div>
+                    <div class="flex">
+                        <div id = 'clr' class="key">CLR</div>
+                        <div id = 'zero' class="key">0</div>
+                        <div id = 'equal' class="key">=</div>
+                    </div>
+                </div>
+                <div class="flex column">
+                    <div id = 'plus' class="key">+</div>
+                    <div id = 'minus' class="key">-</div>
+                    <div id = 'mutiply' class="key">*</div>
+                    <div id = 'divide' class="key">/</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

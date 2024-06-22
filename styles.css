@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+}
+
+body{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.key{
+    padding: 30px;
+    border: solid 1px black;
+    flex-grow: 1;
+}
+
+.column{
+    flex-direction: column;
+    border: white;
+}
+
+#display-container{
+    padding: 2px;
+    border: solid 1px black;
+    justify-content: flex-end;
+}
+#display{
+    align-self: flex-start;
+    font-size: 40px;
+}
+
+.color{
+    background-color: aqua;
+}
+
+#clr{
+    padding-left:18px;
+    padding-right:17px;
+}
+
+#Calculator{
+    justify-content: center;
+}
