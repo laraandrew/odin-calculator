@@ -14,3 +14,16 @@ const operate = (a,b,op) =>{
         default : return 'Operation Error';
     }
 }
+
+const display = document.querySelector('#display');
+
+const numbers = document.querySelectorAll('.number');
+const n = numbers.length;
+for (let i = 0;i<n;i++){
+    numbers[i].addEventListener('click',(e)=>{
+        const t = Number(e.target.textContent);
+        const currentDisplay = Number(display.textContent);
+        const newNumber = t + currentDisplay*10;
+        display.textContent = newNumber;
+    })
+}

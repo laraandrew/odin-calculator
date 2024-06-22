@@ -15,6 +15,10 @@ body{
     flex-grow: 1;
 }
 
+#keys{
+    flex-grow: 1;
+}
+
 .column{
     flex-direction: column;
     border: white;
@@ -41,4 +45,8 @@ body{
 
 #Calculator{
     justify-content: center;
+}
+
+.grow{
+    flex-grow: 1;
 }
