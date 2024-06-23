@@ -17,6 +17,7 @@ const operate = (a,b,op) =>{
 
 let isOperatorActive = false;
 let isEqualDone = false;
+let previousOperatorNode = undefined;
 const display = document.querySelector('#display');
 const clear = document.querySelector('#clr');
 const equal = document.querySelector('#equal');
@@ -28,6 +29,10 @@ equal.addEventListener('click',(e)=>{
     number2 = 0;
     operator = '+';
     isEqualDone = true;
+    if(previousOperatorNode != undefined){
+        previousOperatorNode.style.backgroundColor = 'rgb(77, 74, 74)';
+    }
+    previousOperatorNode = undefined;
 });
 clear.addEventListener('click',()=>{
     display.textContent = 0;
@@ -39,6 +44,7 @@ for (let i = 0;i<n;i++){
         let currentDisplay = 0;
         if(isEqualDone){
             display.textContent = 0;
+            isEqualDone = false;
         }
         if(isOperatorActive){
             currentDisplay = 0;
@@ -70,6 +76,11 @@ for (let i = 0;i<n;i++){
             number1 = Number(display.textContent);
             display.textContent = 0;
         }
+        e.target.style.backgroundColor = 'black';
+        if(previousOperatorNode != undefined){
+            previousOperatorNode.style.backgroundColor = 'rgb(77, 74, 74)';
+        }
         previousOperator = operator;
+        previousOperatorNode = e.target;
     });
 }

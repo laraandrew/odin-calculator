@@ -11,8 +11,10 @@ body{
 
 .key{
     padding: 30px;
-    border: solid 1px black;
+    border: solid 1px white;
     flex-grow: 1;
+    background-color: rgb(77, 74, 74);
+    color: white;
 }
 
 #keys{
@@ -25,8 +27,8 @@ body{
 }
 
 #display-container{
-    padding: 2px;
-    border: solid 1px black;
+    padding: 5px;
+    border-bottom: solid 5px black;
     justify-content: flex-end;
 }
 #display{
@@ -49,4 +51,8 @@ body{
 
 .grow{
     flex-grow: 1;
+}
+
+#container{
+    border: solid 5px black;
 }
