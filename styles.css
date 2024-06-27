@@ -1,58 +1,143 @@
-.flex{
-    display: flex;
-}
-
-body{
+body {
     font-size: x-large;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #020202;
+    background: linear-gradient(90deg, rgba(178,135,163,1) 32%, rgba(112,183,126,1) 100%);
+    font-family: 'Poppins', sans-serif;
 }
 
-.key{
-    padding: 30px;
-    border: solid 1px white;
-    flex-grow: 1;
-    background-color: rgb(77, 74, 74);
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #086375;
     color: white;
+    top: 0;
+    position: fixed;
 }
 
-#keys{
-    flex-grow: 1;
+header h1 {
+    margin: 0;
 }
 
-.column{
-    flex-direction: column;
-    border: white;
+header a {
+    color: #FFF8F0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
-#display-container{
-    padding: 5px;
-    border-bottom: solid 5px black;
+
+header a:hover {
+    color: #70B77E;
+}
+
+
+#container {
+    border: solid 5px #ffffff;
+    border-radius: 10px;
+}
+
+#display-container {
+    padding: 10px;
+    border-bottom: solid 5px #020202;
     justify-content: flex-end;
+    background-color: #086375;
 }
-#display{
+
+#display {
     align-self: flex-start;
     font-size: 40px;
+    color: #FFF8F0;
 }
 
-.color{
-    background-color: aqua;
+.key {
+    padding: 20px;
+    border: solid 1px white;
+    flex-grow: 1;
+    background-color: #70B77E;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#clr{
-    padding-left:18px;
-    padding-right:17px;
+.key:hover {
+    background-color: #B287A3;
+    transform: scale(1.1);
 }
 
-#Calculator{
-    justify-content: center;
+.key.number {
+    background-color: #086375;
 }
 
-.grow{
+.key.number:hover {
+    background-color: #70B77E;
+}
+
+.key.operator {
+    background-color: #B287A3;
+}
+
+.key.operator:hover {
+    background-color: #70B77E;
+}
+
+#clr, #equal {
+    background-color: #020202;
+}
+
+#clr:hover, #equal:hover {
+    background-color: #086375;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.grow {
     flex-grow: 1;
 }
 
-#container{
-    border: solid 5px black;
+#keys {
+    flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: large;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-bottom: 1rem;
+    }
+
+    header a {
+        font-size: 1rem;
+    }
+
+    .key {
+        padding: 15px;
+        font-size: large;
+    }
+
+    #display {
+        font-size: 30px;
+    }
 }

@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Calculator</title>
+    <link rel="icon" href="./calculator.ico" type="image/x-icon">
+    <title>JavaScript Calculator</title>
 </head>
 <body>
+    <header>
+        <h1>Calculator</h1>
+        <a href="https://github.com/laraandrew" target="_blank">GitHub</a>
+    </header>
     <div class="flex" id="Calculator">
-        <div id = 'container'> 
+        <div id="container">
             <div class="flex column">
                 <div class="flex" id="display-container">
                     <div id="display">0</div>
@@ -17,28 +22,28 @@
                 <div class="flex column">
                     <div id="keys" class="flex">
                         <div class="flex column grow">
-                            <div id = 'seven' class="key number">7</div>
-                            <div id = 'four' class="key number">4</div>
-                            <div id = 'one' class="key number">1</div>
-                            <div id = 'clr' class="key">CLR</div>
+                            <div id="seven" class="key number">7</div>
+                            <div id="four" class="key number">4</div>
+                            <div id="one" class="key number">1</div>
+                            <div id="clr" class="key">CLR</div>
                         </div>
                         <div class="flex column grow">
-                            <div id = 'eight' class="key number">8</div>
-                            <div id = 'five' class="key number">5</div>
-                            <div id = 'two' class="key number">2</div>
-                            <div id = 'zero' class="key number">0</div>
+                            <div id="eight" class="key number">8</div>
+                            <div id="five" class="key number">5</div>
+                            <div id="two" class="key number">2</div>
+                            <div id="zero" class="key number">0</div>
                         </div>
                         <div class="flex column grow">
-                            <div id = 'nine' class="key number">9</div>
-                            <div id = 'three' class="key number">3</div>
-                            <div id = 'six' class="key number">6</div>
-                            <div id = 'equal' class="key">=</div>
+                            <div id="nine" class="key number">9</div>
+                            <div id="three" class="key number">3</div>
+                            <div id="six" class="key number">6</div>
+                            <div id="equal" class="key">=</div>
                         </div>
                         <div class="flex column grow">
-                            <div id = 'plus' class="key operator">+</div>
-                            <div id = 'minus' class="key operator">-</div>
-                            <div id = 'mutiply' class="key operator">*</div>
-                            <div id = 'divide' class="key operator">/</div>
+                            <div id="plus" class="key operator">+</div>
+                            <div id="minus" class="key operator">-</div>
+                            <div id="multiply" class="key operator">*</div>
+                            <div id="divide" class="key operator">/</div>
                         </div>
                     </div>
                 </div>
